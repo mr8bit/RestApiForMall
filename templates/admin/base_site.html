@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load static i18n %}
+
+{% block branding %}
+    <h1 id="site-name">
+        {% trans "Панель управления ТРЦ Нора" %}
+    </h1>
+{% endblock %}
+{% block nav-global %}
+    <a  target="_blank" href="//bm-technology.ru" class="sidebar-link icon">
+        <span class="sidebar-link-label">
+            <span class="sidebar-link-icon icon-data"></span>
+            {% trans 'Сайт разработчика' %}
+        </span>
+    </a>
+{% endblock %}
