@@ -22,7 +22,6 @@ def make_upload_path(instance, filename):
     :return:
     """
     folder = slugify(unidecode(instance.name))
-    print(folder)
     return u'shops/%s/%s' % (folder, filename)
 
 
