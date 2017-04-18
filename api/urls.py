@@ -19,9 +19,10 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 from .serializers import *
 from .views import *
-
+from userphoto.views import upload_pic
 urlpatterns = [
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^upload_photo', upload_pic)
 ]
 router = DefaultRouter()
 router.register(r'ads', PlayListAdvertisingViewSet)

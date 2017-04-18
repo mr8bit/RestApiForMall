@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'terminals',
     'shop_and_sales',
     'advertising',
+    'userphoto',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -120,6 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_HOST_USER = 'trcnora@yandex.ru'
+EMAIL_HOST_PASSWORD = 'bmtechnology'
+EMAIL_PORT = 465
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
